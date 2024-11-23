@@ -2,7 +2,8 @@
   "name": "serverlisten",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsx watch ./app.ts",
+    "start": "npm run build && node src/dist/app.js",
+    "start:watch": "npm run build && node --watch src/dist/app.js",
     "build": "tsc"
   },
   "license": "ISC",
