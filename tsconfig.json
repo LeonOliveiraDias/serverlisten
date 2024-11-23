@@ -2,13 +2,9 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "ES2021",
-    "outDir": "src/dist"
+    "outDir": "src/dist",
+    "esModuleInterop": true
   },
-  "include": [
-    "src/**/*.ts"
-, "src/js/controller.ts"  ],
-  "exclude": [
-    "node_modules",
-    "**/node_modules/*"
-  ]
+  "include": ["src/**/*.ts", "src/js/controller.ts"],
+  "exclude": ["node_modules", "**/node_modules/*"]
 }
